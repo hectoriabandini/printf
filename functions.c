@@ -1,15 +1,15 @@
 #include "main.h"
 
-/************************* PRINT CHAR *************************/
+/************************* -PRINT CHAR- *************************/
 
 /**
- * print_char - Prints char
- * @types: List of arguments
+ * print_char - Prints a char
+ * @types: List a of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates flags
+ * @flags:  Calculates active flags
  * @width: Width
- * @precision: Precision spec
- * @size: Size of specifier
+ * @precision: Precision specification
+ * @size: Size specifier
  * Return: Number of chars printed
  */
 int print_char(va_list types, char buffer[],
@@ -25,7 +25,8 @@ int print_char(va_list types, char buffer[],
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
- * @width: get all width.
+ * @width: get width.
+ * @precision: Precision specification
  * @size: Size specifier
  * Return: Number of chars printed
  */
@@ -77,7 +78,7 @@ int print_string(va_list types, char buffer[],
 /**
  * print_percent - Prints a percent sign
  * @types: Lista of arguments
- * @buffer: Buffer array to handle prin
+ * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
  * @precision: Precision specification
@@ -99,9 +100,9 @@ int print_percent(va_list types, char buffer[],
 /************************* PRINT INT *************************/
 /**
  * print_int - Print int
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @types: List arguments
+ * @buffer: Buffer array
+ * @flags:  Calculates flags
  * @width: get width.
  * @precision: Precision specification
  * @size: Size specifier
@@ -145,10 +146,10 @@ int print_int(va_list types, char buffer[],
  * print_binary - Prints an unsigned number
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags:  Calculates flags
  * @width: get width.
  * @precision: Precision specification
- * @size: Size specifier
+ * @size: Size spec
  * Return: Numbers of char printed.
  */
 int print_binary(va_list types, char buffer[],
