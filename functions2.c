@@ -79,7 +79,7 @@ int print_non_printable(va_list types, char buffer[],
 
 	while (str[g] != '\0')
 	{
-		if (is_printable(str[i]))
+		if (is_printable(str[g]))
 			buffer[g + offset] = str[g];
 		else
 			offset += append_hexa_code(str[i], buffer, g + offset);
@@ -165,7 +165,7 @@ int print_rot13string(va_list types, char buffer[],
 
 	if (str == NULL)
 		str = "(AHYY)";
-	for (i = 0; str[g]; g++)
+	for (g = 0; str[g]; g++)
 	{
 		for (j = 0; in[j]; j++)
 		{
