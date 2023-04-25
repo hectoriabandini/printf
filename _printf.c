@@ -50,7 +50,6 @@ int _printf(const char *format, ...)
 
 	return (printed_chars);
 }
-
 /**
  * print_buffer - content of buffer prints out
  * @buffer: Arr of chars
@@ -63,4 +62,3 @@ void print_buffer(char buffer[], int *buff_ind)
 
 	*buff_ind = 0;
 }
-
