@@ -1,4 +1,4 @@
-created by Joys Augustus and Moses Abuh
+created by [Joys Augustus] and [Moses Abuh]
 
 0x11. C - printf team project
 
